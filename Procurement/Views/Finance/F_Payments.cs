@@ -24,5 +24,10 @@ namespace ProcurementDev.Views.Finance
         {
 
         }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

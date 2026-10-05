@@ -14,10 +14,5 @@ namespace ProcurementDev.Views.Finance
         {
             InitializeComponent();
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

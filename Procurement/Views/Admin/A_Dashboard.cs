@@ -34,5 +34,10 @@
 
         private void flowLayoutPanel1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         { }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

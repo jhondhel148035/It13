@@ -30,31 +30,7 @@ namespace ProcurementDev.Views.Admin
         {
             contentPanel.Controls.Clear();
             control.Dock = DockStyle.Fill;
-            cd "C:\Users\jhond\source\repos\Procurement\"
-git status
-git add .
-git commit -m "Convert Supplier to UserControl"
-# add remote if not set (replace URL)
-git remote add origin https://github.com/USERNAME/REPO.git
-# push current branch (replace main with your branch name if different)
-git branch -M main
-git push -u origin maincd "C:\Users\jhond\source\repos\Procurement\"
-git status
-git add .
-git commit -m "Convert Supplier to UserControl"
-# add remote if not set (replace URL)
-git remote add origin https://github.com/USERNAME/REPO.git
-# push current branch (replace main with your branch name if different)
-git branch -M main
-git push -u origin maincd "C:\Users\jhond\source\repos\Procurement\"
-git status
-git add .
-git commit -m "Convert Supplier to UserControl"
-# add remote if not set (replace URL)
-git remote add origin https://github.com/USERNAME/REPO.git
-# push current branch (replace main with your branch name if different)
-git branch -M main
-git push -u origin maincontentPanel.Controls.Add(control);
+            contentPanel.Controls.Add(control);
         }
     }
 }

@@ -8,19 +8,19 @@ using System.Windows.Forms;
 
 namespace ProcurementDev.Views.Admin
 {
-    public partial class A_User : UserControl
+    public partial class ProcstaffSidebar : UserControl
     {
-        public A_User()
+        public ProcstaffSidebar()
         {
             InitializeComponent();
         }
 
-        private void A_User_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void ProcstaffSidebar_Click(object sender, EventArgs e)
         {
 
         }

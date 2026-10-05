@@ -14,5 +14,10 @@ namespace ProcurementDev.Views.Finance
         {
             InitializeComponent();
         }
+
+        private void FinanceDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

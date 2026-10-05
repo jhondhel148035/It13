@@ -50,7 +50,7 @@
             label2.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(20, 46);
             label2.Name = "label2";
-            label2.Size = new Size(277, 17);
+            label2.Size = new Size(228, 16);
             label2.TabIndex = 12;
             label2.Text = "Pick a report, set the filter and generate it";
             // 
@@ -60,12 +60,13 @@
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(20, 14);
             label1.Name = "label1";
-            label1.Size = new Size(82, 23);
+            label1.Size = new Size(64, 19);
             label1.TabIndex = 11;
             label1.Text = "Reports";
             // 
             // panel1
             // 
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(comboBox1);
@@ -84,7 +85,9 @@
             // 
             // button2
             // 
-            button2.Font = new Font("Century Gothic", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 8F);
             button2.Location = new Point(10, 512);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
@@ -95,9 +98,11 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.SlateGray;
-            button1.Font = new Font("Century Gothic", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
+            button1.BackColor = Color.FromArgb(207, 161, 44);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Century Gothic", 8F);
+            button1.ForeColor = Color.Black;
             button1.Location = new Point(10, 471);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
@@ -112,16 +117,16 @@
             comboBox1.Location = new Point(10, 425);
             comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(220, 28);
+            comboBox1.Size = new Size(220, 25);
             comboBox1.TabIndex = 14;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Century Gothic", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Century Gothic", 8F);
             label6.Location = new Point(10, 402);
             label6.Name = "label6";
-            label6.Size = new Size(58, 17);
+            label6.Size = new Size(50, 16);
             label6.TabIndex = 18;
             label6.Text = "Supplier";
             label6.Click += label6_Click;
@@ -132,16 +137,16 @@
             dateTimePicker2.Location = new Point(10, 362);
             dateTimePicker2.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(220, 26);
+            dateTimePicker2.Size = new Size(220, 22);
             dateTimePicker2.TabIndex = 17;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(12, 339);
+            label5.Font = new Font("Century Gothic", 8F);
+            label5.Location = new Point(10, 342);
             label5.Name = "label5";
-            label5.Size = new Size(22, 17);
+            label5.Size = new Size(19, 16);
             label5.TabIndex = 16;
             label5.Text = "To";
             // 
@@ -151,16 +156,16 @@
             dateTimePicker1.Location = new Point(10, 302);
             dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(220, 26);
+            dateTimePicker1.Size = new Size(220, 22);
             dateTimePicker1.TabIndex = 14;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(12, 281);
+            label4.Font = new Font("Century Gothic", 8F);
+            label4.Location = new Point(10, 282);
             label4.Name = "label4";
-            label4.Size = new Size(40, 17);
+            label4.Size = new Size(32, 16);
             label4.TabIndex = 15;
             label4.Text = "From";
             // 
@@ -170,7 +175,7 @@
             label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(10, 12);
             label3.Name = "label3";
-            label3.Size = new Size(113, 18);
+            label3.Size = new Size(90, 16);
             label3.TabIndex = 14;
             label3.Text = "Choose report";
             // 
@@ -181,14 +186,15 @@
             listBox1.Location = new Point(10, 42);
             listBox1.Margin = new Padding(3, 4, 3, 4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(220, 224);
+            listBox1.Size = new Size(220, 208);
             listBox1.TabIndex = 14;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // Reports
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             Controls.Add(panel1);
             Controls.Add(label2);
             Controls.Add(label1);

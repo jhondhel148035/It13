@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(P_Dashboard));
             label2 = new Label();
             label1 = new Label();
-            label3 = new Label();
             panel1 = new Panel();
             label4 = new Label();
             panel2 = new Panel();
@@ -44,9 +44,10 @@
             dataGridView1 = new DataGridView();
             label9 = new Label();
             dataGridView2 = new DataGridView();
-            button3 = new Button();
             panel5 = new Panel();
             panel6 = new Panel();
+            label3 = new Label();
+            button3 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -59,9 +60,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(22, 46);
+            label2.Location = new Point(20, 46);
             label2.Name = "label2";
-            label2.Size = new Size(324, 17);
+            label2.Size = new Size(270, 16);
             label2.TabIndex = 14;
             label2.Text = "Your requisitions, quotations and purchase orders";
             // 
@@ -69,25 +70,16 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(22, 14);
+            label1.Location = new Point(20, 14);
             label1.Name = "label1";
-            label1.Size = new Size(246, 23);
+            label1.Size = new Size(198, 19);
             label1.TabIndex = 13;
             label1.Text = "Procurement Dashboard";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(659, 24);
-            label3.Name = "label3";
-            label3.Size = new Size(175, 16);
-            label3.TabIndex = 15;
-            label3.Text = "Welcome, Procument Staff";
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(label4);
             panel1.Location = new Point(20, 80);
             panel1.Name = "panel1";
@@ -101,13 +93,14 @@
             label4.ForeColor = Color.Gray;
             label4.Location = new Point(15, 14);
             label4.Name = "label4";
-            label4.Size = new Size(108, 17);
+            label4.Size = new Size(94, 16);
             label4.TabIndex = 21;
             label4.Text = "My pending PRs";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.White;
+            panel2.BackColor = Color.FromArgb(226, 237, 237);
+            panel2.BorderStyle = BorderStyle.Fixed3D;
             panel2.Controls.Add(label5);
             panel2.Location = new Point(258, 80);
             panel2.Name = "panel2";
@@ -121,13 +114,14 @@
             label5.ForeColor = Color.Gray;
             label5.Location = new Point(17, 14);
             label5.Name = "label5";
-            label5.Size = new Size(114, 17);
+            label5.Size = new Size(94, 16);
             label5.TabIndex = 22;
             label5.Text = "Awaiting quotes";
             // 
             // panel3
             // 
             panel3.BackColor = Color.White;
+            panel3.BorderStyle = BorderStyle.Fixed3D;
             panel3.Controls.Add(label6);
             panel3.Location = new Point(496, 80);
             panel3.Name = "panel3";
@@ -141,13 +135,14 @@
             label6.ForeColor = Color.Gray;
             label6.Location = new Point(18, 14);
             label6.Name = "label6";
-            label6.Size = new Size(104, 17);
+            label6.Size = new Size(86, 16);
             label6.TabIndex = 23;
             label6.Text = "POs in progress";
             // 
             // panel4
             // 
-            panel4.BackColor = Color.White;
+            panel4.BackColor = Color.FromArgb(190, 208, 206);
+            panel4.BorderStyle = BorderStyle.Fixed3D;
             panel4.Controls.Add(label7);
             panel4.Location = new Point(734, 80);
             panel4.Name = "panel4";
@@ -161,7 +156,7 @@
             label7.ForeColor = Color.Gray;
             label7.Location = new Point(18, 14);
             label7.Name = "label7";
-            label7.Size = new Size(137, 17);
+            label7.Size = new Size(114, 16);
             label7.TabIndex = 24;
             label7.Text = "Rejected this month";
             // 
@@ -171,16 +166,18 @@
             label8.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.Location = new Point(20, 196);
             label8.Name = "label8";
-            label8.Size = new Size(183, 18);
+            label8.Size = new Size(145, 16);
             label8.TabIndex = 21;
             label8.Text = "My purchase requisition";
             // 
             // button2
             // 
-            button2.BackColor = Color.SlateGray;
-            button2.Font = new Font("Century Gothic", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(750, 190);
+            button2.BackColor = Color.FromArgb(207, 161, 44);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Century Gothic", 8F);
+            button2.ForeColor = Color.Black;
+            button2.Location = new Point(750, 188);
             button2.Name = "button2";
             button2.Size = new Size(200, 32);
             button2.TabIndex = 22;
@@ -203,7 +200,7 @@
             label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.Location = new Point(20, 466);
             label9.Name = "label9";
-            label9.Size = new Size(154, 18);
+            label9.Size = new Size(123, 16);
             label9.TabIndex = 24;
             label9.Text = "My purchase orders";
             // 
@@ -217,19 +214,9 @@
             dataGridView2.Size = new Size(932, 170);
             dataGridView2.TabIndex = 25;
             // 
-            // button3
-            // 
-            button3.Font = new Font("Century Gothic", 7.20000029F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(852, 16);
-            button3.Name = "button3";
-            button3.Size = new Size(100, 32);
-            button3.TabIndex = 26;
-            button3.Text = "Refresh";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // panel5
             // 
-            panel5.BackColor = Color.SlateGray;
+            panel5.BackColor = Color.FromArgb(70, 92, 89);
             panel5.Location = new Point(20, 224);
             panel5.Name = "panel5";
             panel5.Size = new Size(932, 30);
@@ -237,20 +224,48 @@
             // 
             // panel6
             // 
-            panel6.BackColor = Color.SlateGray;
+            panel6.BackColor = Color.FromArgb(70, 92, 89);
             panel6.Location = new Point(20, 490);
             panel6.Name = "panel6";
             panel6.Size = new Size(932, 30);
             panel6.TabIndex = 28;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(696, 29);
+            label3.Name = "label3";
+            label3.Size = new Size(132, 15);
+            label3.TabIndex = 45;
+            label3.Text = "Welcome, Finance Staff";
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.White;
+            button3.FlatAppearance.BorderColor = Color.FromArgb(224, 224, 224);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Century Gothic", 8F);
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.ImageAlign = ContentAlignment.MiddleLeft;
+            button3.Location = new Point(851, 20);
+            button3.Name = "button3";
+            button3.Size = new Size(100, 32);
+            button3.TabIndex = 44;
+            button3.Text = "      Refresh";
+            button3.UseVisualStyleBackColor = false;
+            // 
             // P_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(971, 722);
+            BackColor = Color.White;
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(972, 700);
+            Controls.Add(label3);
+            Controls.Add(button3);
             Controls.Add(panel6);
             Controls.Add(panel5);
-            Controls.Add(button3);
             Controls.Add(dataGridView2);
             Controls.Add(label9);
             Controls.Add(dataGridView1);
@@ -260,10 +275,10 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "P_Dashboard";
             Load += P_Dashboard_Load;
             panel1.ResumeLayout(false);
@@ -284,7 +299,6 @@
 
         private Label label2;
         private Label label1;
-        private Label label3;
         private Panel panel1;
         private Panel panel2;
         private Label label4;
@@ -298,8 +312,9 @@
         private DataGridView dataGridView1;
         private Label label9;
         private DataGridView dataGridView2;
-        private Button button3;
         private Panel panel5;
         private Panel panel6;
+        private Label label3;
+        private Button button3;
     }
 }

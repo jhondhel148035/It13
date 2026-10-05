@@ -8,21 +8,11 @@ using System.Windows.Forms;
 
 namespace ProcurementDev.Views.Admin
 {
-    public partial class A_User : UserControl
+    public partial class InventorySidebar : UserControl
     {
-        public A_User()
+        public InventorySidebar()
         {
             InitializeComponent();
-        }
-
-        private void A_User_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
